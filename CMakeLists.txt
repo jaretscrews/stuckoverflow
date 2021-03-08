@@ -1,0 +1,3 @@
+Project(StuckOverflow)
+
+add_subdirectory(StuckOverflowApplication/src)
