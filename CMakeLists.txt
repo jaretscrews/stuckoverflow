@@ -1,3 +1,9 @@
 cmake_minimum_required(VERSION 3.17)
 Project(StuckOverflow)
-add_subdirectory(StuckOverflowApplication/src)
+
+set(CMAKE_CXX_STANDARD 20)
+
+enable_testing()
+
+add_subdirectory(libStackOverflow)
+add_subdirectory(StuckOverflowApplication)
