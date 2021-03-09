@@ -1,3 +1,3 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.16)
 add_executable(StuckOverflow main.cpp)
 target_link_libraries(StuckOverflow PRIVATE libStackOverflowApi)
