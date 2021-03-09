@@ -1,5 +1,4 @@
-#include <iostream>
-#include "../libStackOverflow/src/StackOverflowApi.h"
+#include "StackOverflowApi.h"
 
 int main(){
     StackOverflowApi x;
