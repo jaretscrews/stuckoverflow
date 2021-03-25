@@ -1,7 +1,3 @@
-//
-// Created by Jaret Screws on 3/8/21.
-//
-
 #include <iostream>
 #include "StackOverflowApi.h"
 
