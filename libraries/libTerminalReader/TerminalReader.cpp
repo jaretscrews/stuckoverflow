@@ -2,7 +2,6 @@
 #include <iostream>
 
 std::string TerminalReader::excuteCommandAndCaptureOutput(std::string cmd) {
-    std::cout << "testing reading the terminal" << std::endl;
     std::string data;
     FILE * stream;
     const int max_buffer = 256;
@@ -19,4 +18,12 @@ std::string TerminalReader::excuteCommandAndCaptureOutput(std::string cmd) {
         pclose(stream);
     }
     return data;
+}
+
+//Finds the first error in a clang++ compiled program
+std::string TerminalReader::parseForErrors(std::string s) {
+    auto errorStart = s.find("error");
+    auto errorEnd = s.find('\n', errorStart);
+    auto error = s.substr(errorStart, errorEnd - errorStart);
+    return error;
 }
