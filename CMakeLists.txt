@@ -11,4 +11,4 @@ add_subdirectory(external/googletest)
 
 include_directories(${PROJECT_SOURCE_DIR}/libraries)
 add_executable(StuckOverflow main.cpp)
-target_link_libraries(StuckOverflow PRIVATE libStackOverflowApi)
+target_link_libraries(StuckOverflow PRIVATE libStackOverflowApi libTerminalReader)
